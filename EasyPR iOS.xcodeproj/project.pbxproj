@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53CB66CA1A7BF694007B7FEB /* ann.xml in Resources */ = {isa = PBXBuildFile; fileRef = 53CB66C61A7BF693007B7FEB /* ann.xml */; };
+		53CB66CB1A7BF694007B7FEB /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 53CB66C71A7BF694007B7FEB /* haarcascade_frontalface_alt_tree.xml */; };
+		53CB66CC1A7BF694007B7FEB /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 53CB66C81A7BF694007B7FEB /* haarcascade_frontalface_default.xml */; };
+		53CB66CD1A7BF694007B7FEB /* svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 53CB66C91A7BF694007B7FEB /* svm.xml */; };
+		53CB66E21A7BF6CC007B7FEB /* chars_identify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66CF1A7BF6CC007B7FEB /* chars_identify.cpp */; };
+		53CB66E31A7BF6CC007B7FEB /* chars_recognise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66D01A7BF6CC007B7FEB /* chars_recognise.cpp */; };
+		53CB66E41A7BF6CC007B7FEB /* chars_segment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66D11A7BF6CC007B7FEB /* chars_segment.cpp */; };
+		53CB66E51A7BF6CC007B7FEB /* features.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66D21A7BF6CC007B7FEB /* features.cpp */; };
+		53CB66E61A7BF6CC007B7FEB /* plate_detect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66D31A7BF6CC007B7FEB /* plate_detect.cpp */; };
+		53CB66E71A7BF6CC007B7FEB /* plate_judge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66D41A7BF6CC007B7FEB /* plate_judge.cpp */; };
+		53CB66E81A7BF6CC007B7FEB /* plate_locate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66D51A7BF6CC007B7FEB /* plate_locate.cpp */; };
+		53CB66E91A7BF6CC007B7FEB /* plate_recognize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53CB66D61A7BF6CC007B7FEB /* plate_recognize.cpp */; };
 		53D77EA31A7BA23300FE1882 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */; };
 		53EBCCD21A7B445E002F67C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD11A7B445E002F67C1 /* main.m */; };
 		53EBCCD51A7B445E002F67C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD41A7B445E002F67C1 /* AppDelegate.m */; };
@@ -22,6 +34,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53CB66C61A7BF693007B7FEB /* ann.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ann.xml; sourceTree = "<group>"; };
+		53CB66C71A7BF694007B7FEB /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		53CB66C81A7BF694007B7FEB /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		53CB66C91A7BF694007B7FEB /* svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = svm.xml; sourceTree = "<group>"; };
+		53CB66CF1A7BF6CC007B7FEB /* chars_identify.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = chars_identify.cpp; sourceTree = "<group>"; };
+		53CB66D01A7BF6CC007B7FEB /* chars_recognise.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = chars_recognise.cpp; sourceTree = "<group>"; };
+		53CB66D11A7BF6CC007B7FEB /* chars_segment.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = chars_segment.cpp; sourceTree = "<group>"; };
+		53CB66D21A7BF6CC007B7FEB /* features.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = features.cpp; sourceTree = "<group>"; };
+		53CB66D31A7BF6CC007B7FEB /* plate_detect.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = plate_detect.cpp; sourceTree = "<group>"; };
+		53CB66D41A7BF6CC007B7FEB /* plate_judge.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = plate_judge.cpp; sourceTree = "<group>"; };
+		53CB66D51A7BF6CC007B7FEB /* plate_locate.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = plate_locate.cpp; sourceTree = "<group>"; };
+		53CB66D61A7BF6CC007B7FEB /* plate_recognize.cpp */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.cpp.cpp; path = plate_recognize.cpp; sourceTree = "<group>"; };
+		53CB66D81A7BF6CC007B7FEB /* chars_identify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chars_identify.h; sourceTree = "<group>"; };
+		53CB66D91A7BF6CC007B7FEB /* chars_recognise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chars_recognise.h; sourceTree = "<group>"; };
+		53CB66DA1A7BF6CC007B7FEB /* chars_segment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chars_segment.h; sourceTree = "<group>"; };
+		53CB66DB1A7BF6CC007B7FEB /* features.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		53CB66DC1A7BF6CC007B7FEB /* plate_detect.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = plate_detect.h; sourceTree = "<group>"; };
+		53CB66DD1A7BF6CC007B7FEB /* plate_judge.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = plate_judge.h; sourceTree = "<group>"; };
+		53CB66DE1A7BF6CC007B7FEB /* plate_locate.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = plate_locate.h; sourceTree = "<group>"; };
+		53CB66DF1A7BF6CC007B7FEB /* plate_recognize.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = plate_recognize.h; sourceTree = "<group>"; };
+		53CB66E01A7BF6CC007B7FEB /* prep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prep.h; sourceTree = "<group>"; };
+		53CB66E11A7BF6CC007B7FEB /* util.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIImageCVMatConverter.mm; sourceTree = "<group>"; };
 		53D77EA21A7BA23300FE1882 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCVMatConverter.h; sourceTree = "<group>"; };
 		53EBCCCC1A7B445E002F67C1 /* EasyPR iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyPR iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,9 +91,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53CB66C51A7BF693007B7FEB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				53CB66C61A7BF693007B7FEB /* ann.xml */,
+				53CB66C71A7BF694007B7FEB /* haarcascade_frontalface_alt_tree.xml */,
+				53CB66C81A7BF694007B7FEB /* haarcascade_frontalface_default.xml */,
+				53CB66C91A7BF694007B7FEB /* svm.xml */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		53CB66CE1A7BF6CC007B7FEB /* core */ = {
+			isa = PBXGroup;
+			children = (
+				53CB66CF1A7BF6CC007B7FEB /* chars_identify.cpp */,
+				53CB66D01A7BF6CC007B7FEB /* chars_recognise.cpp */,
+				53CB66D11A7BF6CC007B7FEB /* chars_segment.cpp */,
+				53CB66D21A7BF6CC007B7FEB /* features.cpp */,
+				53CB66D31A7BF6CC007B7FEB /* plate_detect.cpp */,
+				53CB66D41A7BF6CC007B7FEB /* plate_judge.cpp */,
+				53CB66D51A7BF6CC007B7FEB /* plate_locate.cpp */,
+				53CB66D61A7BF6CC007B7FEB /* plate_recognize.cpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		53CB66D71A7BF6CC007B7FEB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				53CB66D81A7BF6CC007B7FEB /* chars_identify.h */,
+				53CB66D91A7BF6CC007B7FEB /* chars_recognise.h */,
+				53CB66DA1A7BF6CC007B7FEB /* chars_segment.h */,
+				53CB66DB1A7BF6CC007B7FEB /* features.h */,
+				53CB66DC1A7BF6CC007B7FEB /* plate_detect.h */,
+				53CB66DD1A7BF6CC007B7FEB /* plate_judge.h */,
+				53CB66DE1A7BF6CC007B7FEB /* plate_locate.h */,
+				53CB66DF1A7BF6CC007B7FEB /* plate_recognize.h */,
+				53CB66E01A7BF6CC007B7FEB /* prep.h */,
+				53CB66E11A7BF6CC007B7FEB /* util.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		53EBCCC31A7B445E002F67C1 = {
 			isa = PBXGroup;
 			children = (
+				53CB66CE1A7BF6CC007B7FEB /* core */,
+				53CB66D71A7BF6CC007B7FEB /* include */,
+				53CB66C51A7BF693007B7FEB /* model */,
 				53EBCCF81A7B446F002F67C1 /* Framework */,
 				53EBCCCE1A7B445E002F67C1 /* EasyPR iOS */,
 				53EBCCCD1A7B445E002F67C1 /* Products */,
@@ -172,7 +252,11 @@
 			files = (
 				53EBCCDE1A7B445E002F67C1 /* Main.storyboard in Resources */,
 				53EBCCE31A7B445E002F67C1 /* LaunchScreen.xib in Resources */,
+				53CB66CD1A7BF694007B7FEB /* svm.xml in Resources */,
 				53EBCCE01A7B445E002F67C1 /* Images.xcassets in Resources */,
+				53CB66CB1A7BF694007B7FEB /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				53CB66CC1A7BF694007B7FEB /* haarcascade_frontalface_default.xml in Resources */,
+				53CB66CA1A7BF694007B7FEB /* ann.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +268,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				53EBCCD51A7B445E002F67C1 /* AppDelegate.m in Sources */,
+				53CB66E21A7BF6CC007B7FEB /* chars_identify.cpp in Sources */,
 				53EBCCD21A7B445E002F67C1 /* main.m in Sources */,
+				53CB66E91A7BF6CC007B7FEB /* plate_recognize.cpp in Sources */,
 				53EBCCDB1A7B445E002F67C1 /* ViewController.mm in Sources */,
+				53CB66E31A7BF6CC007B7FEB /* chars_recognise.cpp in Sources */,
+				53CB66E61A7BF6CC007B7FEB /* plate_detect.cpp in Sources */,
+				53CB66E41A7BF6CC007B7FEB /* chars_segment.cpp in Sources */,
+				53CB66E71A7BF6CC007B7FEB /* plate_judge.cpp in Sources */,
 				53EBCCD81A7B445E002F67C1 /* EasyPR_iOS.xcdatamodeld in Sources */,
+				53CB66E51A7BF6CC007B7FEB /* features.cpp in Sources */,
+				53CB66E81A7BF6CC007B7FEB /* plate_locate.cpp in Sources */,
 				53D77EA31A7BA23300FE1882 /* UIImageCVMatConverter.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +395,11 @@
 					1/Chapter06_WorkingWithGallery,
 				);
 				GCC_PREFIX_HEADER = "/Users/zhoushiwei/Dropbox/EasyPR iOS/EasyPR iOS/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/\"",
+				);
 				INFOPLIST_FILE = "EasyPR iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,6 +421,11 @@
 					1/Chapter06_WorkingWithGallery,
 				);
 				GCC_PREFIX_HEADER = "/Users/zhoushiwei/Dropbox/EasyPR iOS/EasyPR iOS/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/\"",
+				);
 				INFOPLIST_FILE = "EasyPR iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
