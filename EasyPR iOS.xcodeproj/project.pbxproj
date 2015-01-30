@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53D77EA31A7BA23300FE1882 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */; };
 		53EBCCD21A7B445E002F67C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD11A7B445E002F67C1 /* main.m */; };
 		53EBCCD51A7B445E002F67C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD41A7B445E002F67C1 /* AppDelegate.m */; };
 		53EBCCD81A7B445E002F67C1 /* EasyPR_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD61A7B445E002F67C1 /* EasyPR_iOS.xcdatamodeld */; };
-		53EBCCDB1A7B445E002F67C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCDA1A7B445E002F67C1 /* ViewController.m */; };
+		53EBCCDB1A7B445E002F67C1 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCDA1A7B445E002F67C1 /* ViewController.mm */; };
 		53EBCCDE1A7B445E002F67C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCCDC1A7B445E002F67C1 /* Main.storyboard */; };
 		53EBCCE01A7B445E002F67C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCCDF1A7B445E002F67C1 /* Images.xcassets */; };
 		53EBCCE31A7B445E002F67C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCCE11A7B445E002F67C1 /* LaunchScreen.xib */; };
-		53EBCCEF1A7B445F002F67C1 /* EasyPR_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCEE1A7B445F002F67C1 /* EasyPR_iOSTests.m */; };
+		53EBCCFD1A7B447A002F67C1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCF91A7B447A002F67C1 /* opencv2.framework */; };
+		53EBCCFE1A7B447A002F67C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCFA1A7B447A002F67C1 /* UIKit.framework */; };
+		53EBCCFF1A7B447A002F67C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCFB1A7B447A002F67C1 /* Foundation.framework */; };
+		53EBCD001A7B447A002F67C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCFC1A7B447A002F67C1 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		53EBCCE91A7B445F002F67C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53EBCCC41A7B445E002F67C1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53EBCCCB1A7B445E002F67C1;
-			remoteInfo = "EasyPR iOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIImageCVMatConverter.mm; sourceTree = "<group>"; };
+		53D77EA21A7BA23300FE1882 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCVMatConverter.h; sourceTree = "<group>"; };
 		53EBCCCC1A7B445E002F67C1 /* EasyPR iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyPR iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EBCCD01A7B445E002F67C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53EBCCD11A7B445E002F67C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,13 +31,15 @@
 		53EBCCD41A7B445E002F67C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53EBCCD71A7B445E002F67C1 /* EasyPR_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyPR_iOS.xcdatamodel; sourceTree = "<group>"; };
 		53EBCCD91A7B445E002F67C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		53EBCCDA1A7B445E002F67C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53EBCCDA1A7B445E002F67C1 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		53EBCCDD1A7B445E002F67C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53EBCCDF1A7B445E002F67C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		53EBCCE21A7B445E002F67C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		53EBCCE81A7B445F002F67C1 /* EasyPR iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EasyPR iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		53EBCCED1A7B445F002F67C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53EBCCEE1A7B445F002F67C1 /* EasyPR_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyPR_iOSTests.m; sourceTree = "<group>"; };
+		53EBCCF91A7B447A002F67C1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Instant OpenCV for iOS [Instant]/SET 1/Chapter06_WorkingWithGallery/opencv2.framework"; sourceTree = "<group>"; };
+		53EBCCFA1A7B447A002F67C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53EBCCFB1A7B447A002F67C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53EBCCFC1A7B447A002F67C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53EBCD011A7B44CA002F67C1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,13 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53EBCCE51A7B445F002F67C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				53EBCD001A7B447A002F67C1 /* CoreGraphics.framework in Frameworks */,
+				53EBCCFD1A7B447A002F67C1 /* opencv2.framework in Frameworks */,
+				53EBCCFF1A7B447A002F67C1 /* Foundation.framework in Frameworks */,
+				53EBCCFE1A7B447A002F67C1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +60,8 @@
 		53EBCCC31A7B445E002F67C1 = {
 			isa = PBXGroup;
 			children = (
+				53EBCCF81A7B446F002F67C1 /* Framework */,
 				53EBCCCE1A7B445E002F67C1 /* EasyPR iOS */,
-				53EBCCEB1A7B445F002F67C1 /* EasyPR iOSTests */,
 				53EBCCCD1A7B445E002F67C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				53EBCCCC1A7B445E002F67C1 /* EasyPR iOS.app */,
-				53EBCCE81A7B445F002F67C1 /* EasyPR iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,9 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				53EBCCD31A7B445E002F67C1 /* AppDelegate.h */,
+				53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */,
+				53D77EA21A7BA23300FE1882 /* UIImageCVMatConverter.h */,
 				53EBCCD41A7B445E002F67C1 /* AppDelegate.m */,
 				53EBCCD91A7B445E002F67C1 /* ViewController.h */,
-				53EBCCDA1A7B445E002F67C1 /* ViewController.m */,
+				53EBCCDA1A7B445E002F67C1 /* ViewController.mm */,
 				53EBCCDC1A7B445E002F67C1 /* Main.storyboard */,
 				53EBCCDF1A7B445E002F67C1 /* Images.xcassets */,
 				53EBCCE11A7B445E002F67C1 /* LaunchScreen.xib */,
@@ -101,25 +97,20 @@
 			children = (
 				53EBCCD01A7B445E002F67C1 /* Info.plist */,
 				53EBCCD11A7B445E002F67C1 /* main.m */,
+				53EBCD011A7B44CA002F67C1 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		53EBCCEB1A7B445F002F67C1 /* EasyPR iOSTests */ = {
+		53EBCCF81A7B446F002F67C1 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				53EBCCEE1A7B445F002F67C1 /* EasyPR_iOSTests.m */,
-				53EBCCEC1A7B445F002F67C1 /* Supporting Files */,
+				53EBCCF91A7B447A002F67C1 /* opencv2.framework */,
+				53EBCCFA1A7B447A002F67C1 /* UIKit.framework */,
+				53EBCCFB1A7B447A002F67C1 /* Foundation.framework */,
+				53EBCCFC1A7B447A002F67C1 /* CoreGraphics.framework */,
 			);
-			path = "EasyPR iOSTests";
-			sourceTree = "<group>";
-		};
-		53EBCCEC1A7B445F002F67C1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				53EBCCED1A7B445F002F67C1 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,24 +133,6 @@
 			productReference = 53EBCCCC1A7B445E002F67C1 /* EasyPR iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		53EBCCE71A7B445F002F67C1 /* EasyPR iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53EBCCF51A7B445F002F67C1 /* Build configuration list for PBXNativeTarget "EasyPR iOSTests" */;
-			buildPhases = (
-				53EBCCE41A7B445F002F67C1 /* Sources */,
-				53EBCCE51A7B445F002F67C1 /* Frameworks */,
-				53EBCCE61A7B445F002F67C1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53EBCCEA1A7B445F002F67C1 /* PBXTargetDependency */,
-			);
-			name = "EasyPR iOSTests";
-			productName = "EasyPR iOSTests";
-			productReference = 53EBCCE81A7B445F002F67C1 /* EasyPR iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,10 +144,6 @@
 				TargetAttributes = {
 					53EBCCCB1A7B445E002F67C1 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					53EBCCE71A7B445F002F67C1 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 53EBCCCB1A7B445E002F67C1;
 					};
 				};
 			};
@@ -192,7 +161,6 @@
 			projectRoot = "";
 			targets = (
 				53EBCCCB1A7B445E002F67C1 /* EasyPR iOS */,
-				53EBCCE71A7B445F002F67C1 /* EasyPR iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,13 +176,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53EBCCE61A7B445F002F67C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -224,28 +185,13 @@
 			files = (
 				53EBCCD51A7B445E002F67C1 /* AppDelegate.m in Sources */,
 				53EBCCD21A7B445E002F67C1 /* main.m in Sources */,
-				53EBCCDB1A7B445E002F67C1 /* ViewController.m in Sources */,
+				53EBCCDB1A7B445E002F67C1 /* ViewController.mm in Sources */,
 				53EBCCD81A7B445E002F67C1 /* EasyPR_iOS.xcdatamodeld in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53EBCCE41A7B445F002F67C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53EBCCEF1A7B445F002F67C1 /* EasyPR_iOSTests.m in Sources */,
+				53D77EA31A7BA23300FE1882 /* UIImageCVMatConverter.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		53EBCCEA1A7B445F002F67C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53EBCCCB1A7B445E002F67C1 /* EasyPR iOS */;
-			targetProxy = 53EBCCE91A7B445F002F67C1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53EBCCDC1A7B445E002F67C1 /* Main.storyboard */ = {
@@ -301,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -347,9 +293,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhoushiwei/Dropbox/Instant,
+					OpenCV,
+					for,
+					iOS,
+					"[Instant]/SET",
+					1/Chapter06_WorkingWithGallery,
+				);
+				GCC_PREFIX_HEADER = "/Users/zhoushiwei/Dropbox/EasyPR iOS/EasyPR iOS/PrefixHeader.pch";
 				INFOPLIST_FILE = "EasyPR iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -357,43 +314,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhoushiwei/Dropbox/Instant,
+					OpenCV,
+					for,
+					iOS,
+					"[Instant]/SET",
+					1/Chapter06_WorkingWithGallery,
+				);
+				GCC_PREFIX_HEADER = "/Users/zhoushiwei/Dropbox/EasyPR iOS/EasyPR iOS/PrefixHeader.pch";
 				INFOPLIST_FILE = "EasyPR iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		53EBCCF61A7B445F002F67C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "EasyPR iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyPR iOS.app/EasyPR iOS";
-			};
-			name = Debug;
-		};
-		53EBCCF71A7B445F002F67C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "EasyPR iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyPR iOS.app/EasyPR iOS";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -416,14 +350,7 @@
 				53EBCCF41A7B445F002F67C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		53EBCCF51A7B445F002F67C1 /* Build configuration list for PBXNativeTarget "EasyPR iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53EBCCF61A7B445F002F67C1 /* Debug */,
-				53EBCCF71A7B445F002F67C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
