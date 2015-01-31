@@ -153,6 +153,7 @@
 		53CB680C1A7CA069007B7FEB /* plate_judge_result_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53CB67891A7CA069007B7FEB /* plate_judge_result_0.jpg */; };
 		53CB680D1A7CA069007B7FEB /* 使用说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 53CB678A1A7CA069007B7FEB /* 使用说明.txt */; };
 		53CB68111A7CAD61007B7FEB /* 华文细黑.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53CB68101A7CAD61007B7FEB /* 华文细黑.ttf */; };
+		53CB68151A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png in Resources */ = {isa = PBXBuildFile; fileRef = 53CB68141A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png */; };
 		53D77EA31A7BA23300FE1882 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */; };
 		53EBCCD21A7B445E002F67C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD11A7B445E002F67C1 /* main.m */; };
 		53EBCCD51A7B445E002F67C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD41A7B445E002F67C1 /* AppDelegate.m */; };
@@ -315,6 +316,7 @@
 		53CB67891A7CA069007B7FEB /* plate_judge_result_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plate_judge_result_0.jpg; sourceTree = "<group>"; };
 		53CB678A1A7CA069007B7FEB /* 使用说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "使用说明.txt"; sourceTree = "<group>"; };
 		53CB68101A7CAD61007B7FEB /* 华文细黑.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "华文细黑.ttf"; sourceTree = "<group>"; };
+		53CB68141A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3638739A412B925A11D84552B4479C92.png; sourceTree = "<group>"; };
 		53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIImageCVMatConverter.mm; sourceTree = "<group>"; };
 		53D77EA21A7BA23300FE1882 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCVMatConverter.h; sourceTree = "<group>"; };
 		53EBCCCC1A7B445E002F67C1 /* EasyPR iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyPR iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -389,6 +391,7 @@
 		53CB67031A7CA069007B7FEB /* image */ = {
 			isa = PBXGroup;
 			children = (
+				53CB68141A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png */,
 				53CB67041A7CA069007B7FEB /* baidu_image */,
 				53CB67181A7CA069007B7FEB /* chars_identify.jpg */,
 				53CB67191A7CA069007B7FEB /* chars_recognise.jpg */,
@@ -745,6 +748,7 @@
 				53CB68071A7CA069007B7FEB /* debug_resize_9.jpg in Resources */,
 				53CB67EF1A7CA069007B7FEB /* debug_crop_2.jpg in Resources */,
 				53CB67C31A7CA069007B7FEB /* 苏B577CU.jpg in Resources */,
+				53CB68151A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png in Resources */,
 				53CB67D01A7CA069007B7FEB /* 鲁JRW350.jpg in Resources */,
 				53CB67C51A7CA069007B7FEB /* 苏BU5838.jpg in Resources */,
 				53CB67D41A7CA069007B7FEB /* 黑A1R272.jpg in Resources */,
