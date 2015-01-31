@@ -7,7 +7,27 @@
 //
 #import "ViewController.h"
 #import "UIImageCVMatConverter.h"
+#import "SVProgressHUD.h"
+#include "../include/plate_locate.h"
+#include "../include/plate_judge.h"
+#include "../include/chars_segment.h"
+#include "../include/chars_identify.h"
 
+#include "../include/plate_detect.h"
+#include "../include/chars_recognise.h"
+
+#include "../include/plate_recognize.h"
+using namespace easypr;
+
+int test_plate_locate();
+int test_plate_judge();
+int test_chars_segment();
+int test_chars_identify();
+int test_plate_detect();
+int test_chars_recognise();
+int test_plate_recognize();
+int testMain();
+CPlateRecognize pr;
 @interface ViewController ()
 
 @end
@@ -15,11 +35,12 @@
 @implementation ViewController
 
 @synthesize imageView;
+@synthesize textView;
 @synthesize loadButton;
 @synthesize saveButton;
 @synthesize popoverController;
 @synthesize toolbar;
-
+@synthesize textLabel;
 - (NSInteger)supportedInterfaceOrientations
 {
     //only portrait orientation
@@ -39,7 +60,9 @@
     }
     UIImage* temp = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     UIImage *temp_image=[UIImageCVMatConverter scaleAndRotateImageBackCamera:temp];
+    [SVProgressHUD show];
     source_image=[UIImageCVMatConverter cvMatFromUIImage:temp_image];
+    UIImage*plate_uiimage=[self plateRecognition:source_image];
     imageView.image = temp_image;
     [saveButton setEnabled:YES];
 }
@@ -149,12 +172,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *ann_ns=[[NSBundle mainBundle]pathForResource:@"ann" ofType:@"xml"];
+    NSString *svm_ns=[[NSBundle mainBundle]pathForResource:@"svm" ofType:@"xml"];
+    string annpath=[ann_ns UTF8String];
+    string svmpath=[svm_ns UTF8String];
+    pr.LoadANN(annpath);
+    pr.LoadSVM(svmpath);
+    
+    pr.setLifemode(true);
+    pr.setDebug(false);
     CGRect bounds = [UIScreen mainScreen].bounds;
     imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake(0, 0, bounds.size.width, bounds.size.height);
     imageView.contentMode=UIViewContentModeScaleAspectFit;
     imageView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:imageView];
+//    textView = [[UIImageView alloc] init];
+//    textView.frame = CGRectMake(20, 0, 100, 30);
+//    textView.contentMode=UIViewContentModeScaleAspectFit;
+//    textView.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:textView];
+//    [self.view bringSubviewToFront:textView];
+    /* Add the fps Label */
+    UILabel *fps = [[UILabel alloc] initWithFrame:CGRectMake(20, 120, 180, 20)];
+    fps.font=[UIFont fontWithName:@"华文细黑" size:14.0f];
+    
+    fps.backgroundColor=[UIColor clearColor];
+    fps.textColor=[UIColor redColor];
+    fps.textAlignment=NSTextAlignmentLeft;
+   // fps.transform = CGAffineTransformMakeRotation(90);
+    fps.text=@"周";
+    self.textLabel = fps;
+    [self.view addSubview:self.textLabel];
+    [self.view bringSubviewToFront:self.textLabel];
+    
     toolbar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, bounds.size.height- 44, bounds.size.width, 44)];
     [toolbar setBackgroundColor:[UIColor clearColor]];
     //   toolbar.barStyle=UIBarStyleDefault;
@@ -165,20 +216,7 @@
                   forToolbarPosition:UIBarPositionAny
                           barMetrics:UIBarMetricsDefault];
     toolbar.delegate=self;
-    UIBarButtonItem*barItem0 = [[UIBarButtonItem alloc]
-                                initWithTitle:@"嘴巴"
-                                style:UIBarButtonItemStylePlain
-                                target:self
-                                action:@selector(startCaptureButtonPressed:)];
-    UIBarButtonItem*barItem1 = [[UIBarButtonItem alloc]
-                                
-                                initWithTitle:@"眼睛"
-                                
-                                style:UIBarButtonItemStylePlain
-                                
-                                target:self
-                                
-                                action:@selector(stopCaptureButtonPressed:)];
+  
     UIBarButtonItem*TrainingItem= [[UIBarButtonItem alloc]
                                    
                                    initWithTitle:@"识别"
@@ -208,8 +246,8 @@
                                 action:@selector(loadButtonCameraPressed:)];
   
     
-    [toolbar setItems:[NSArray arrayWithObjects:barItem0 ,flexitem,barItem1 ,flexitem,TrainingItem ,flexitem,albumitem,flexitem,cameraitem,
-                       flexitem, nil]];
+    [toolbar setItems:[NSArray arrayWithObjects:TrainingItem ,flexitem,albumitem,flexitem,cameraitem,
+                       nil]];
     [self.view addSubview:toolbar];
     
     // Do any additional setup after loading the view, typically from a nib
@@ -217,6 +255,42 @@
   
     
     [saveButton setEnabled:NO];
+     [SVProgressHUD show];
+    NSString *nsstring=[[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg"];
+    string image_path=[nsstring UTF8String];
+    
+    source_image=imread(image_path);
+    resize(source_image, source_image,cv::Size(source_image.cols/2,source_image.rows/2));
+    imageView.image=[UIImageCVMatConverter UIImageFromCVMat:source_image];
+    UIImage*plate_uiimage=[self plateRecognition:source_image];
+}
+
+-(UIImage*)plateRecognition:(cv::Mat&)src
+{
+    UIImage *plateimage;
+    vector<string> plateVec;
+    
+    int result = pr.plateRecognize(src, plateVec);
+    if (result == 0)
+    {
+        int num = (int)plateVec.size();
+        for (int j = 0; j < num; j++)
+        {
+            cout << "plateRecognize: " << plateVec[j] << endl;
+        }
+    }
+    printf("%s",plateVec[0].c_str());
+    NSString *errorMessage = [NSString stringWithCString:plateVec[0].c_str()
+                                                encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",errorMessage);
+  //  NSString* string2 = [plateVec[0].c_str() stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [self.textLabel performSelectorOnMainThread:@selector(setText:) withObject:[NSString stringWithFormat:@"%@",errorMessage] waitUntilDone:NO];
+  //   [self.textLabel performSelectorOnMainThread:@selector(setText:) withObject:[NSString stringWithFormat:@"多个闪光灯和对方回复"] waitUntilDone:NO];
+    
+    if (result != 0)
+        cout << "result:" << result << endl;
+    [SVProgressHUD dismiss];
+    return plateimage;
 }
 
 - (void)didReceiveMemoryWarning
