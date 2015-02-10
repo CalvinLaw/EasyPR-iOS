@@ -155,6 +155,8 @@
 		53CB68111A7CAD61007B7FEB /* 华文细黑.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53CB68101A7CAD61007B7FEB /* 华文细黑.ttf */; };
 		53CB68151A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png in Resources */ = {isa = PBXBuildFile; fileRef = 53CB68141A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png */; };
 		53D77EA31A7BA23300FE1882 /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */; };
+		53E633851A89A1E5006673E2 /* 3638739A412B925A11D84552B4479C92.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E633841A89A1E5006673E2 /* 3638739A412B925A11D84552B4479C92.png */; };
+		53E633871A89A1F9006673E2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E633861A89A1F9006673E2 /* opencv2.framework */; };
 		53EBCCD21A7B445E002F67C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD11A7B445E002F67C1 /* main.m */; };
 		53EBCCD51A7B445E002F67C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD41A7B445E002F67C1 /* AppDelegate.m */; };
 		53EBCCD81A7B445E002F67C1 /* EasyPR_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53EBCCD61A7B445E002F67C1 /* EasyPR_iOS.xcdatamodeld */; };
@@ -162,7 +164,6 @@
 		53EBCCDE1A7B445E002F67C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCCDC1A7B445E002F67C1 /* Main.storyboard */; };
 		53EBCCE01A7B445E002F67C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCCDF1A7B445E002F67C1 /* Images.xcassets */; };
 		53EBCCE31A7B445E002F67C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53EBCCE11A7B445E002F67C1 /* LaunchScreen.xib */; };
-		53EBCCFD1A7B447A002F67C1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCF91A7B447A002F67C1 /* opencv2.framework */; };
 		53EBCCFE1A7B447A002F67C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCFA1A7B447A002F67C1 /* UIKit.framework */; };
 		53EBCCFF1A7B447A002F67C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCFB1A7B447A002F67C1 /* Foundation.framework */; };
 		53EBCD001A7B447A002F67C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EBCCFC1A7B447A002F67C1 /* CoreGraphics.framework */; };
@@ -319,6 +320,8 @@
 		53CB68141A7CD621007B7FEB /* 3638739A412B925A11D84552B4479C92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3638739A412B925A11D84552B4479C92.png; sourceTree = "<group>"; };
 		53D77EA11A7BA23300FE1882 /* UIImageCVMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIImageCVMatConverter.mm; sourceTree = "<group>"; };
 		53D77EA21A7BA23300FE1882 /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCVMatConverter.h; sourceTree = "<group>"; };
+		53E633841A89A1E5006673E2 /* 3638739A412B925A11D84552B4479C92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3638739A412B925A11D84552B4479C92.png; path = image/3638739A412B925A11D84552B4479C92.png; sourceTree = "<group>"; };
+		53E633861A89A1F9006673E2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		53EBCCCC1A7B445E002F67C1 /* EasyPR iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyPR iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EBCCD01A7B445E002F67C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53EBCCD11A7B445E002F67C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -330,11 +333,9 @@
 		53EBCCDD1A7B445E002F67C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53EBCCDF1A7B445E002F67C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		53EBCCE21A7B445E002F67C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		53EBCCF91A7B447A002F67C1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../Instant OpenCV for iOS [Instant]/SET 1/Chapter06_WorkingWithGallery/opencv2.framework"; sourceTree = "<group>"; };
 		53EBCCFA1A7B447A002F67C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53EBCCFB1A7B447A002F67C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53EBCCFC1A7B447A002F67C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		53EBCD011A7B44CA002F67C1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,8 +344,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				53EBCD001A7B447A002F67C1 /* CoreGraphics.framework in Frameworks */,
-				53EBCCFD1A7B447A002F67C1 /* opencv2.framework in Frameworks */,
 				53EBCCFF1A7B447A002F67C1 /* Foundation.framework in Frameworks */,
+				53E633871A89A1F9006673E2 /* opencv2.framework in Frameworks */,
 				53EBCCFE1A7B447A002F67C1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +563,7 @@
 		53EBCCC31A7B445E002F67C1 = {
 			isa = PBXGroup;
 			children = (
+				53E633841A89A1E5006673E2 /* 3638739A412B925A11D84552B4479C92.png */,
 				53CB67031A7CA069007B7FEB /* image */,
 				53CB66FD1A7C9E05007B7FEB /* SVProgressHUD */,
 				53CB66CE1A7BF6CC007B7FEB /* core */,
@@ -604,7 +606,6 @@
 				53CB68101A7CAD61007B7FEB /* 华文细黑.ttf */,
 				53EBCCD01A7B445E002F67C1 /* Info.plist */,
 				53EBCCD11A7B445E002F67C1 /* main.m */,
-				53EBCD011A7B44CA002F67C1 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -612,7 +613,7 @@
 		53EBCCF81A7B446F002F67C1 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				53EBCCF91A7B447A002F67C1 /* opencv2.framework */,
+				53E633861A89A1F9006673E2 /* opencv2.framework */,
 				53EBCCFA1A7B447A002F67C1 /* UIKit.framework */,
 				53EBCCFB1A7B447A002F67C1 /* Foundation.framework */,
 				53EBCCFC1A7B447A002F67C1 /* CoreGraphics.framework */,
@@ -800,6 +801,7 @@
 				53CB67F31A7CA069007B7FEB /* debug_crop_6.jpg in Resources */,
 				53CB67991A7CA069007B7FEB /* test5.jpg in Resources */,
 				53CB678D1A7CA069007B7FEB /* test11.jpg in Resources */,
+				53E633851A89A1E5006673E2 /* 3638739A412B925A11D84552B4479C92.png in Resources */,
 				53CB67D61A7CA069007B7FEB /* general_test.png in Resources */,
 				53CB67E21A7CA069007B7FEB /* debug_char_auxRoi_4.jpg in Resources */,
 				53CB68111A7CAD61007B7FEB /* 华文细黑.ttf in Resources */,
@@ -955,8 +957,9 @@
 					iOS,
 					"[Instant]/SET",
 					1/Chapter06_WorkingWithGallery,
+					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "/Users/zhoushiwei/Dropbox/EasyPR iOS/EasyPR iOS/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -964,6 +967,7 @@
 				);
 				INFOPLIST_FILE = "EasyPR iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s";
 			};
@@ -981,8 +985,9 @@
 					iOS,
 					"[Instant]/SET",
 					1/Chapter06_WorkingWithGallery,
+					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "/Users/zhoushiwei/Dropbox/EasyPR iOS/EasyPR iOS/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

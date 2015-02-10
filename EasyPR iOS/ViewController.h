@@ -6,8 +6,13 @@
 //  Copyright (c) 2015年 zhoushiwei. All rights reserved.
 //
 
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
+#endif
 @interface ViewController : UIViewController<UIImagePickerControllerDelegate,
 UINavigationControllerDelegate, UIPopoverControllerDelegate,UIToolbarDelegate> {
     UIPopoverController *popoverController;

@@ -9,9 +9,13 @@
 #ifndef __FaceRig__UIImageCVMatConverter__
 #define __FaceRig__UIImageCVMatConverter__
 
-#include <stdio.h>
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#include <opencv2/core/core_c.h>
+#endif
 using namespace cv;
 
 @interface UIImageCVMatConverter : NSObject
